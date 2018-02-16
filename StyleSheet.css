@@ -1,0 +1,214 @@
+﻿body {
+    font-family:Helvetica, sans-serif; 
+}
+
+body>div {
+    width: 600px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*search box ---------------------------------------------------------------------------------*/
+    /*buttons and input built as nav from ul*/
+    #searchBox > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #searchBox > ul li {
+            display: inline;
+            text-decoration: none;
+        }
+
+        #searchBox > ul li >div{
+            display:inline;
+            border:3px solid white;
+            border-radius:2px;
+        }
+        /*color glyphicons*/
+         #searchBox > ul li i{
+             color:white;
+         }
+
+            #searchBox > ul li i:hover {
+                cursor: pointer;
+                color: #cc00cc;
+            }
+
+            #searchBox > ul li input {
+                outline: none;
+                background-color: #800080;
+                color: white;
+                border-color:white;
+                border-width:0 0 1px 0;
+                box-sizing:border-box;
+            }
+
+                #searchBox > ul li input:focus {
+                    outline: none;
+                }
+            /*search buttons*/
+            #searchBox > ul li > button {
+                color: white;
+                border-radius: 3px;
+                border: 3px solid white;
+            }
+
+                #searchBox > ul li > button:hover {
+                    background-color: #cc00cc;
+                    cursor:pointer;
+                }
+/*search buttons unpressed*/
+.buttonSearchColor {
+    background-color: #800080;
+}
+/*search buttons pressed*/
+.buttonPressed {
+    background-color: #4d004d;
+}
+
+/*tabs- third div in container - online status of streams------------------------------------*/
+#tabs {
+    height: 30px;
+}
+/*color of all tabs - unpressed and hover*/
+.tabOnline {
+    background-color: #85e085; /*light green*/
+}
+
+    #tab-Online:hover {
+        background-color: #558000; /*dark green*/
+    }
+
+.tabOffline {
+    background-color: #ff661a; /*light red*/
+}
+
+    #tab-Offline:hover {
+        background-color: #cc4400; /*dark red*/
+    }
+
+.tabAll {
+    background-color: #8a8a5c;
+}
+
+    #tab-All:hover {
+        background-color: #6b6b47;
+    }
+
+[id^="tab-"] {
+    display:inline-block;
+    width:33.33%;
+    height:30px;
+    box-sizing:border-box;
+    text-align:center;
+    font-size:18px;
+    vertical-align:middle;
+    padding-top:6px;
+}
+
+[id^="tab-"]:hover{
+    cursor:pointer;
+}
+/*tabs pressed*/
+.buttonOnlinePressed {
+    background-color: #558000; /*dark green*/
+    
+}
+
+.buttonOfflinePressed {
+    background-color: #cc4400; /*dark red*/
+}
+
+.buttonAllPressed {
+    background-color: #6b6b47;
+}
+
+.bottomBorder {
+    border-bottom: 2px solid;
+}
+
+.otherBorder{
+    border-width:2px 2px 0 2px;
+    border-style:solid;
+}
+/*changes in container background color*/
+.containerColorAll {
+    background-color: #d6d6c2; /*lighter grey*/
+}
+
+.containerColorOnline {
+    background-color: #c2efc2; /*lighter red*/
+}
+
+.containerColorOffline {
+    background-color: #ffbb99; /*lighter red*/
+}
+
+/*styling the cards on which the status is placed----------------------------------------------------*/ 
+[id^="card_"] {
+    margin-top: 10px;
+    min-height: 40px;
+    background-color: aqua;
+    color: #00004d; /*dark blue*/
+    position:relative;
+}
+    [id^="card_"] > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+/*the three divs in the card*/
+    [id^="card_"] > div:first-child {
+        width: 10%;
+       
+    }
+
+        [id^="card_"] > div:nth-child(2) {
+            width: 20%;
+            text-align: center;
+            
+        }
+        [id^="card_"] > div:nth-child(2)>a {
+            text-decoration: none;
+            color: #993333;
+        }
+
+
+    [id^="card_"] > div:nth-child(3){
+        width:70%;
+    }
+
+[id^="card_"] > div:first-child>img{
+    height:40px;
+    width:40px;
+    border-radius:5px;
+    margin:0 auto;
+    display:block;
+}
+/*color of cards*/
+.greenStyle {
+    background-color: #85e085;
+    border-top: 20px solid #85e085;
+    border-bottom: 20px solid #85e085;
+}
+
+.redStyle {
+    background-color: #ff661a;
+    border-top: 20px solid #ff661a;
+    border-bottom: 20px solid #ff661a;
+}
+/*class added to cards filtered out*/
+.invisible{
+    display:none;
+}
+
+@media screen and (max-width: 600px) {
+    body>div:first-child {
+        width:100%;
+    }
+}
+

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TwitchTV App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/f71d8abb75.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="containerColorAll">
+        <!--header-->
+        <p style="font-family:Helvetica,Arial, sans-serif;font-size:30px;color:aliceblue;background-color:#800080;border-top:40px solid #800080; border-bottom:40px solid #800080;margin:0;">
+            <img src="http://res.cloudinary.com/dctvlfl7e/image/upload/v1510066431/Twitch_Logo-1_mvvsoj.jpg" width="100" style="vertical-align:middle;margin:0 5%;" />
+            Twitch TV Streams
+        </p>
+        <!--search box-->
+        <div id="searchBox" style="background-color:#800080;">
+            <ul class="searchList">
+                <li><button type="button" id="onlyStreams" class="buttonSearchColor">Only streams</button></li>
+                <li><button type="button" id="onlyNames" class="buttonSearchColor">Only names</button></li>
+                <li><button type="button" id="allFields" class="buttonPressed">Both fields</button></li>
+                <li>
+                    <div>
+                        <input type="text" placeholder="Search"  id="form" />
+                        <i class="fa fa-times" aria-hidden="true" id="clear"></i>
+                        <i class="fa fa-search" aria-hidden="true" id="search"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--three tabs with online status-->
+        <div id="tabs" style="background-color:#ff661a;">
+            <div id="tab-All" class="tabAll otherBorder buttonAllPressed">All</div><div id="tab-Online" class="tabOnline bottomBorder">
+            Online</div><div id="tab-Offline" class="tabOffline bottomBorder">
+            Offline</div>
+        </div>
+        <!--area where cards are appended-->
+        <div id="streams"></div>
+        <div style="background-color:#800080;height:20px;"></div>
+    </div>
+
+</body>
+</html>
